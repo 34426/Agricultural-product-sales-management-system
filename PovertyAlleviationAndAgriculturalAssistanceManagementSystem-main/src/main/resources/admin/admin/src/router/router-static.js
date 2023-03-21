@@ -20,7 +20,16 @@ import center from '@/views/center'
     import pinkundianjiashenqing from '@/views/modules/pinkundianjiashenqing/list'
     import aixinjuanzeng from '@/views/modules/aixinjuanzeng/list'
     import shengchandifenlei from '@/views/modules/shengchandifenlei/list'
-
+    import discussdianpu from '@/views/modules/discussdianpu/list'
+    import yonghu from '@/views/modules/yonghu/list'
+    import dianjia from '@/views/modules/dianjia/list'
+    import shangpinfenlei from '@/views/modules/shangpinfenlei/list'
+    import aixinxiang from '@/views/modules/aixinxiang/list'
+    import fupinzhengce from '@/views/modules/fupinzhengce/list'
+    import discussfupinzhengce from '@/views/modules/discussfupinzhengce/list'
+    import orders from '@/views/modules/orders/list'
+    import pinkundianjiaxinxi from '@/views/modules/pinkundianjiaxinxi/list'
+    import config from '@/views/modules/config/list'
 
 
 //2.配置路由   注意：名字
@@ -44,7 +53,17 @@ const routes = [{
       name: '支付',
       component: pay,
       meta: {icon:'', title:'pay'}
+    }, {
+      path: '/center',
+      name: '个人信息',
+      component: center,
+      meta: {icon:'', title:'center'}
     }
+      ,{
+	path: '/news',
+        name: '自然风光介绍',
+        component: news
+      }
       ,{
 	path: '/discussshangpin',
         name: '商品评论',
